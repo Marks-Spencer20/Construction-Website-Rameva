@@ -9,6 +9,9 @@ import Contact from './routes/Contact';
 import NavBar from './components/NavBar';
 import Bookings from './routes/Bookings';
 import SignUp from './routes/SignUp';
+import Appointment from './routes/Appointment';
+import {ToastContainer} from 'react-toastify'
+import Footer from './components/Footer';
 
 
 
@@ -26,8 +29,11 @@ function App() {
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/Bookings" element={<Bookings/>}/>
           <Route path="/SignUp" element={<SignUp/>}/>
+          <Route path="/Appointment" element={<Appointment/>}/>
         </Routes>
-       
+        
+        <ToastContainer theme='dark' />
+        <Footer/>
       </BrowserRouter>
      
       
