@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import logo from "../images/logo.jpeg";
+// import logo from "../images/logo.jpeg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <header>
+    <nav>
       <div className="navbar">
         <div className="logo">
           <a href="#">Rameva Consult</a>
@@ -64,7 +64,7 @@ function Navbar() {
     </li>
   </ul>
 </div>
-    </header>
+    </nav>
   );
 }
 
